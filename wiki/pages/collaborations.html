@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}Collaborations{% endblock %}
+
+{% block page_content %}
+</div>
+
+  <!-- Общий контейнер для контента и бокового меню -->
+  <div class="description-layout">
+
+    <!-- основной текст -->
+    <div class="description-main-text">
+      <h3 id="academic-exchanges">Academic Exchanges</h3>
+
+      <h4 id="igba-forum">The 3rd iGEM Greater Bay Area Synthetic Biology Industry-Academia-Research Forum</h4>
+      <p>As a team participating in iGEM for only the second time, we faced the challenge of quickly integrating into the global iGEM community and building connections that could enrich our project. A turning point came with our participation in <strong>the 3rd iGEM Greater Bay Area Synthetic Biology Industry-Academia-Research Forum (iGBA Forum)</strong>, held on July 14–16 in Hong Kong and Shenzhen.</p>
+      <p>This forum provided us with our first opportunity in 2025 to engage in academic exchange and explore potential collaborations. We gained valuable insights into how synthetic biology projects are developed in different contexts and how teams approach both technical and societal challenges. For us, this experience went far beyond a conference — it marked the <strong>starting point of a collaborative network</strong> that later contributed to achieving our goals in promoting accurate knowledge about infectious diseases.</p>
+
+      <h4 id="collaborations-with-universities">Collaborations with Universities of the Greater Bay Area</h4>
+      <p>From our research we found that the lack of systematic and uptodate coverage of infectious disease topics in the school curriculum leaves many students with gaps in basic understanding. This finding pushed us to look for practical ways of sharing clear and accessible information, not only with current students but also with recent graduates now living in university dorms. </p>
+      <p>Because by that time we had already established contacts with almost every team in the region (Greater Bay Area), and after getting very positive feedback from placing posters in our own university, we used these connections to collaborate with other universities. These included HKU-HongKong (The University of Hong Kong), JLU-NBBMS (Jilin University), SZU-China (Shenzhen University),SMU-Union-China (Southern Medical University), Sustech-BIO (Southern University of Science and Technology) and NFLSHS-CHINA (Nanshan Foreign Language School). We created several posters for display in university dormitories, some providing general information about infectious diseases and transmission routes to strengthen basic understanding of personal safety, and others specifically targeted at beauty service users, offering guidance on how to assess hygiene practices and reduce personal risk. These were placed in hightraffic areas, like elevator zones in dorms, reaching over 50 000 people. </p>
+      <p>We are grateful to the teams who supported this initiative and helped us carry forward our mission of raising awareness about infectious diseases.</p>
+
+      <h4 id="ccic-conference">The 12th China Community iGEMer Conference (CCiC)</h4>
+      <p>The next major milestone was our participation in <strong>the 12th China Community iGEMer Conference (CCiC)</strong>, hosted in Beijing on August 6–8. This was the first time we publicly presented our project in front of fellow iGEM teams, professors, and synthetic biology experts.</p>
+      <p>During the poster session, we received a wide range of questions regarding our design and implementation strategies. These questions helped us identify gaps and refine the direction of our project. The feedback we received directly influenced several of our later decisions. Learn more in <strong>Integrated Human Practices</strong>.</p>
+      <p>In Beijing, we also had the chance to connect with the team <strong>Peking HSC</strong>, who are also working on hepatitis B and directly with patient communities. Their project focuses on developing riboswitch-based strategies for precise treatment of HBV and liver fibrosis, combined with outreach to vulnerable groups such as patients and visually impaired people. From our conversations we learned a lot about how to approach interactions with vulnerable communities, and later applied some of their advice when engaging with patients ourselves. Learn more in <strong>Stories Behind HBV</strong>.</p>
+
+      <h3 id="health-awareness">Health Awareness on Campus and Beyond</h3>
+
+      <h4 id="health-day">Health Day at Our Campus</h4>
+      <p>On September 17, together with Shenzhen Hospital, Beijing University of Chinese Medicine (Longgang District), we organized a campus event as a direct response to the challenges raised during our meeting with the CDC. The event took place in front of the university cafeteria, the busiest spot on campus, to maximize visibility. In total, more than 2,000 people — both students and staff — took part. Our team prepared not only printed educational materials but also engaging quizzes and games on infectious diseases, where participants could win small prizes. The hospital supported the initiative by providing free condoms for distribution and by delivering short talks on prevention methods and basic knowledge about hepatitis. As a long-term outcome, a permanent condom distribution machine was installed at the university health center to ensure ongoing access to protection. Building on the success, an additional lecture for all university students is planned right after the Mid-Autumn public holiday.</p>
+
+      <h4 id="tv-interview">Sharing Our Story with the City: Shenzhen TV Station Interview</h4>
+
+    </div>
+
+    <!-- Боковое меню будет сгенерировано здесь -->
+    <nav class="side-menu dynamic">
+      <h4 class="menu-title">Contents</h4>
+      <ul id="dynamic-menu-list">
+        <!-- JS сгенерирует пункты меню -->
+      </ul>
+    </nav>
+  </div>
+
+<!-- Подключаем внешний скрипт -->
+<script src="{{ url_for('static', filename='js/menu-script.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block title %}Public Engagement{% endblock %}
+
+{% block page_content %}
+<style>
+  .description-main-text a {
+    color: #003EA0;
+  }
+  .description-main-text a:hover {
+    color: #0056b3;
+  }
+</style>
+</div>
+
+  <!-- Общий контейнер для контента и бокового меню -->
+  <div class="description-layout">
+
+    <!-- основной текст -->
+    <div class="description-main-text">
+
+      <p>Throughout the development of our project, we encountered a wide range of challenges — some expected, others more subtle. To address each one, we applied a simple yet effective logic: <strong>Identify → Understand → Act</strong>. This structure helped us stay focused on practical outcomes. Whether we were looking into HBV knowledge gaps, uncovering underdiscussed transmission risks, or engaging with the impact of stigma, we first defined the issue, explored its underlying causes, and then developed tailored responses.</p>
+      <p>These problem areas didn’t appear all at once — they emerged step by step, as we dug deeper into the topic. This process led us to three key themes:</p>
+      <p><strong>What do people know about HBV?</strong></p>
+      <p><strong>How is HBV transmitted, and what are we missing today?</strong></p>
+      <p><strong>What social barriers prevent access to care or open conversation?</strong></p>
+      <p>Each section below follows this same logic, showing how our team moved from insight to action.</p>
+
+      <h3 id="what-do-people-know-about-hbv">What Do People Know about HBV?</h3>
+      <p>To establish a baseline, we started by reviewing the latest statistical data on infectious disease awareness among middle and high school students. A 2025 study showed concerning results: students answered correctly on theoretical and practical knowledge on related topics only about 59% and 67.5% of the time, respectively, underscoring substantial gaps in understanding (Zeng et al., 2025). When searching for specific data on HBV awareness, we found no information online, especially about our province. During this process, we also noticed a consistent trend: residents of rural areas typically demonstrated significantly lower health literacy on these topics. This prompted us to conduct our own survey on HBV knowledge, prioritizing rural communities. We conducted this fieldwork in Shixing County, Taiping Town (Guangdong Province), where we spent a week collaborating with government and community volunteers. Alongside data collection, we taught residents about HBV and basic hygiene.</p>
+      <p><strong>Key Takeaways</strong></p>
+      <p><strong>First:</strong> Education on HBV is severely lacking.</p>
+      <p><strong>Second:</strong> The elderly are simultaneously the most affected by HBV and the least informed.</p>
+
+      <h4 id="why-is-awareness-so-low">Why Is Awareness So Low?</h4>
+      <p>We analyzed biology textbooks and K-12 curricula, finding only superficial references to viruses and none to hepatitis B. Interviews with schoolteachers confirmed that HBV is typically skipped or barely mentioned. This void in structured education leads to knowledge gaps that affect public health. Learn more in <a href="{{ url_for('pages', page='education') }}"><strong>Education</strong></a>.</p>
+
+      <h4 id="education-at-schools">Education at Schools</h4>
+      <p>In high schools, we organized lectures focused on infectious diseases, including HBV, with a focus on prevention, transmission, and general biological literacy. These lectures were complemented by knowledge assessments conducted before and after the sessions. This effort laid the foundation for a broader educational strategy. Learn more in <a href="{{ url_for('pages', page='education') }}"><strong>Education</strong></a>.</p>
+
+      <h4 id="expanding-to-at-risk-groups-the-elderly">Expanding to At-Risk Groups: The Elderly</h4>
+      <p>Community health workers highlighted that older adults are often unaware of how to protect themselves and their families. This observation was also supported by data we collected during our fieldwork — many elderly respondents were unable to correctly identify HBV transmission routes or had never heard of the virus at all. Moreover, unlike younger generations, many elderly people were never vaccinated against HBV, as vaccination programs were only introduced more recently. In fact, some of them may unknowingly be chronic carriers of hepatitis B or other infectious diseases. Their ability to access reliable health information is also limited by factors like age, digital illiteracy, and reliance on outdated sources.</p>
+      <p>To address this, we conducted a series of outreach activities in five elderly care centers in rural Shixing County. Unlike with students, the interaction here felt slower and more fragile. Many elderly residents had never heard of HBV, and those who had often misunderstood how it spreads. During the workshops, we focused on clear and gentle communication — using visual aids, examples from daily life, and avoiding complex terminology. The sessions covered infection prevention, hygiene basics, and general disease awareness, tailored to their daily routines and risks.</p>
+      <p>For future visitors and residents, we developed easy-to-understand informational posters, which were later sent and displayed in senior community centers. Our goal was not only to share knowledge, but to ensure that this knowledge remained accessible even after we left.</p>
+
+      <h3 id="how-is-hbv-transmitted-and-what-are-we-missing-today">How is HBV transmitted, and what are we missing today?</h3>
+      <p>Following the insights gained from our fieldwork, we reached out to the Shenzhen Center for Disease Control and Prevention (CDC) to seek expert guidance. Our goal was to understand the current situation of hepatitis B in our region and to seek expert input for designing educational materials that could improve awareness and biological literacy in the context of infectious diseases. We aimed to ensure that our lectures and posters would align with real-world needs and public health priorities.</p>
+
+      <h4 id="sexual-transmission-from-dialogue-to-prevention">Sexual Transmission: From Dialogue to Prevention</h4>
+      <p>“The biggest challenge of HBV prevention and control is the complexity of transmission routes — especially sexual transmission, which is rising.”</p>
+      <p>— CDC Officer, Shenzhen, July 2025</p>
+      <p>As our discussion unfolded, CDC experts emphasized on the complexity of HBV transmission pathways, shifting our attention to aspects we hadn’t initially prioritized. They noted that mother-to-child transmission has been nearly eliminated (0–0.1%) and blood-related transmission is well controlled in Shenzhen due to over 20 years of NAT (Nucleic Acid Testing) screening for HBV, HIV, and HCV. However, they stressed that sexual transmission is becoming increasingly significant, especially among young adults. They also highlighted the possibility of other less-defined transmission routes — a point that later resonated with us as we uncovered hygiene risks in settings like beauty services.</p>
+      <p>In collaboration with Shenzhen Hospital, Beijing University of Chinese Medicine (Longgang District), we organized a campus event as a direct response to the challenges raised during our meeting with the CDC. The initiative aimed to improve students’ awareness of infectious diseases, especially in the context of sexual transmission. The event included university-wide lectures, a prevention-focused education campaign, and the distribution of free contraceptives. As a long-term follow-up, a permanent condom distribution box was installed at the university health center to ensure ongoing access to protection. Learn more in <a href="{{ url_for('pages', page='collaborations') }}"><strong>Collaboration</strong></a>.</p>
+
+      <h4 id="rethinking-risk-what-about-beauty-services">Rethinking Risk: What About Beauty Services?</h4>
+      <p>We also focused on the beauty industry, as the CDC also highlighted the possibility of other, less-defined transmission routes. This decision was shaped both by personal experiences and by recognizing the influence of this sector in the modern world. Its accessibility to young consumers and the wide range of procedures it offers raise significant hygiene concerns. While clinical settings have improved sterilization protocols, non-medical venues may still pose risks.</p>
+      <p>Our team includes young women and their acquaintances who have used beauty services in China. Based on personal observations, they reported rapid expansion of the sector—with nail salons, spas, and beauty studios on every corner—and noted that many establishments neglect proper sanitation. Smaller salons often lack official licenses, and clients, eager to follow beauty trends, may overlook the risks involved.</p>
+      <p>To better understand the issue, we began by monitoring media reports, identifying real and confirmed cases of HBV transmission linked to facial treatments, tattoos, pedicures, and cosmetic injections. In one recent case from December 2024, a 16-year-old contracted HBV after undergoing facial treatments at a beauty salon. A government investigation concluded that improper disinfection of tools was the cause.</p>
+      <p>We relied on official sources such as provincial health commission websites, CDC centers, the China Hepatitis B Foundation, and mainstream media. While many documented cases exist, underreporting is likely due to stigma and fear. Anonymous testimonials about possible HBV infections in salons are widespread on blogs and social platforms.</p>
+      <p>Our literature review confirmed that public beauty procedures can be a transmission factor. One study found that women who regularly undergo cosmetic treatments face double the risk of HBV infection (Pang, 2003). The key factor is not the number of clients, but the virus’s resilience: even with few customers, insufficient tool processing keeps the risk high (Yang et al., 2013).</p>
+      <p>We examined sanitation standards issued by the Chinese Ministry of Health (last updated April 4, 2019). These guidelines outline space and air quality, and mention boiling or infrared disinfection—but not autoclaving. The temperatures required for complete HBV inactivation (≥98°C for at least 5 minutes, or autoclaving at 121°C for 20 minutes) are not specified. Infrared cabinets, still commonly used, are not recommended by CDC or FDA for HBV.</p>
+      <p>Many small salons operate without precise temperature controls. Studies show that up to 6% of salon tools in China carry HBV markers (Meng, 2013), suggesting that practitioner knowledge and intent are critical.</p>
+      <p>We started by creating informative leaflets about sterilization protocols, co-designed with professionals from an internationally certified salon. These were distributed to over 50 local beauty establishments.</p>
+      <p>Recognizing that transmission is not solely the responsibility of salon workers, we also targeted the main consumer group: young women aged 17–25. We organized lectures under the slogan "Don’t Be a Victim of Beauty!" for students at our university. In preparing these materials, we were guided by experts from the APHRODITA salon, who operate in full compliance with international standards. The salon owner kindly gave us a tour and introduced us to the sterilization procedures used by their staff. This input helped shape our educational content and tips on recognizing safe practices during beauty procedures.</p>
+      <p>We created several posters for display in university dormitories, some with general information about infectious diseases and transmission routes, to improve basic understanding of personal safety, and others specifically targeted at beauty service users, offering guidance on how to assess hygiene practices and reduce personal risk. These posters were placed in high-traffic areas, including elevator zones in women's dorms, reaching over 6,000 people. To expand impact, we also shared these materials with other iGEM teams to display in university dorms across Shenzhen. Learn more in <a href="{{ url_for('pages', page='collaborations') }}"><strong>Collaboration</strong></a>.</p>
+
+      <h3 id="social-barriers-stigma"><strong>What social barriers prevent access to care or open conversation?</strong></h3>
+      <p>Throughout this project, every time we spoke about hepatitis B to people outside the infectious disease field, whether during lectures, casual conversations, or outreach activities, it was hard not to notice the lingering weight of judgment and discomfort. Even when not expressed directly, there was always a sense that this topic made people uneasy. That HBV carried a social cost, not just a medical one.</p>
+
+      <h4 id="encounter-with-stigma"><strong>From Numbers to Faces: Our First Encounter with Stigma</strong></h4>
+      <p>We’ll be honest, before this project, our team felt distant from the problem. We were fortunate to have no personal connection to hepatitis B, and for a long time, we viewed it solely as a scientific problem, not fully grasping its scale. That changed unexpectedly when we met our first person living with the virus.</p>
+      <p>It happened by chance, in a small Chinese village where we had come to do outreach. Almost offhand, we asked if anyone there had hepatitis. To our surprise, the answer came quickly — and it came with a finger pointing across the road, toward a small convenience store. We crossed over and found a man in a worn, neglected state. People around us kept their distance, even quietly urging us not to approach — they said it could be dangerous. But we were too curious, too eager to meet the first real person behind all the numbers.</p>
+      <p>He didn’t want to talk at first. But in a fleeting moment, something in him seemed to recognize that we weren’t there to judge him. We weren’t afraid; we were simply… puzzled. He let his guard down for just a minute or two. Long enough to tell us he had been infected before he was even born — passed from his mother. There was pain in his voice. A sense of injustice. Loneliness. Maybe despair. Then, perhaps from alcohol or the weight of the conversation, he pulled away and refused to continue.</p>
+      <p>What stayed with us was not just his story, but the scene around it. How loud the judgment and rejection from the community had been. And how silent the compassion. How silent the action.</p>
+      <p>This encounter made us realize how deeply stigma runs — not just as an abstract issue, but as a lived reality that shapes access to care and emotional wellbeing. We decided to explore this further.</p>
+
+      <h4 id="misconceptions-as-barriers"><strong>How Misconceptions Become Barriers</strong></h4>
+      <p>Data collection revealed that stigma remains one of the main barriers to diagnosis, treatment, and social integration for people living with HBV. Even among those with a basic understanding of the virus, community members often avoided discussing the topic, fearing judgment and preferring to conceal their status. Our surveys highlighted the intensity of fear and shame associated with HBV. Most participants, both patients and their close ones (family members, partners, friends), refused to be interviewed or agreed to speak only under strict conditions of anonymity. Even short conversations were often marked by discomfort, tension, and emotional detachment.</p>
+      <p>To assess the extent of misinformation, we deliberately included incorrect modes of transmission—such as coughing, public toilets, or contact with animals—into the questionnaire. A significant portion of respondents marked these as true, revealing a widespread presence of myths and misconceptions. These inaccuracies further contribute to public anxiety, fuel social isolation of infected individuals, and hinder prevention, open discussion, and timely treatment.</p>
+      <p>These findings led us to explore scientific literature and large-scale social studies to better understand the scope and consequences of HBV-related stigma. </p>
+
+      <h4 id="public-personal-crisis"><strong>A Public and Personal Health Crisis</strong></h4>
+      <p>Research confirms that HBV stigma remains a serious social and medical issue. Despite anti-discrimination laws in China, people living with HBV still face exclusion in employment, education, healthcare, and daily life. Stigma has profound negative effects on quality of life. It undermines physical health, disrupts psychological well-being, limits social ties, and decreases satisfaction with one’s environment (Li et al., 2020). Increased anxiety, depression, lowered self-esteem, and emotional exhaustion are common. In some cases, this leads to suicidal ideation (Jin et al., 2020).</p>
+      <p><strong>But stigma doesn’t only impact mental health—it directly disrupts public health systems.</strong></p>
+      <p>Fear of being judged prevents individuals from seeking medical care. Patients often hide their diagnosis, even from close relatives, and avoid screenings and tests, particularly in rural communities and among youth (Zhang et al., 2019). Studies show that up to 50% of vulnerable individuals opt out of testing due to fear of being socially marked. Even in educational and professional settings, HBV remains a taboo topic, reinforcing the illusion that the disease is “someone else’s problem.” This misconception promotes hidden transmission and undermines vaccination efforts (Jin et al., 2020). </p>
+      <p>Post-diagnosis, many patients fail to follow prescribed treatments—not only out of fear of exposure but also due to internalized stigma, leading to guilt and a feeling of being undeserving of care. Research indicates that individuals with high internal stigma are 1.8 times more likely to skip follow-up care and have distorted perceptions of their health (Wang et al., 2025). Stigma directly reduces treatment adherence: patients may stop taking medication, avoid follow-up appointments, or fully disengage from the healthcare system (Li et al., 2020). </p>
+      <p>Those in socially unstable situations or with limited access to resources are especially vulnerable. The psychosocial burden of HBV demands not only clinical, but also psychological support. Depression, anxiety, and social withdrawal impair patients’ ability to engage with their treatment (Jin et al., 2020). The social consequences of stigma are deep and long-lasting. Patients experience limited career and educational opportunities, broken relationships, and withdrawal from community life (Li et al., 2020). Even people not infected with the virus often display avoidant behavior: up to half of surveyed Chinese citizens admitted they would not want to be near someone with HBV. Alarmingly, breaches of medical confidentiality by healthcare professionals still occur in China, including disclosing a patient’s status to their employer or school. This contributes to institutionalized stigma, leaving even well-educated patients feeling exposed and vulnerable (Zhang et al., 2019).</p>
+      <p>Patients with lower education levels or those living in rural areas are particularly at risk of discrimination and social isolation. This creates a vicious cycle: lack of information and support amplifies fear, which in turn strengthens stigma and obstructs prevention.</p>
+
+      <h4 id="changing-the-narrative"><strong>Changing the Narrative: Campaigning Against Stigma</strong></h4>
+      <p>To break this cycle, we launched a public awareness campaign aimed at normalizing open conversation about hepatitis B and supporting those affected by stigma.</p>
+      <p>As our outreach progressed and we encountered real stories from people affected by the virus, we came to understand the profound social dimensions of the issue. In response, we took our first step toward public engagement by sharing accurate, accessible information on social media.</p>
+      <p>On July 28th — World Hepatitis Day — we launched our online campaign across Xiaohongshu and Instagram. These platforms were chosen due to their popularity among young people, our key demographic. We published a series of posts explaining what HBV is, how it spreads, and why public knowledge matters. These materials cumulatively reached over 5,000 monthly views.</p>
+      <p>To deepen the emotional reach of our campaign, we started collecting and sharing voices of people living with hepatitis B. For many, especially those unfamiliar with the disease, hearing real people speak about life with HBV is more impactful than any statistics.</p>
+      <p>These conversations helped challenge a stereotype — that hepatitis B only affects so-called "high-risk" groups. Our interviews reveal that the majority of patients are ordinary individuals who were often infected through no fault of their own. We talked to people who openly speak about their experience online. By sharing these stories, we wanted to show that people with HBV are not defined by their diagnosis. Many live full, active lives — and their openness can help others feel seen, supported, and empowered. Learn more in <a href="{{ url_for('pages', page='stories-behind-hbv') }}"><strong>Stories Behind HBV</strong></a>.</p>
+    </div>
+
+    <!-- Боковое меню будет сгенерировано здесь -->
+    <nav class="side-menu dynamic">
+      <h4 class="menu-title">Contents</h4>
+      <ul id="dynamic-menu-list">
+        <!-- JS сгенерирует пункты меню -->
+      </ul>
+    </nav>
+  </div>
+
+<!-- Подключаем внешний скрипт -->
+<script src="{{ url_for('static', filename='js/menu-script.js') }}"></script>
+
+{% endblock %}
