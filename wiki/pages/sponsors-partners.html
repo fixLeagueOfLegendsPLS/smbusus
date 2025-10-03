@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}Sponsors & Partners{% endblock %}
+
+{% block page_content %}
+
+  <div class="description-layout">
+
+    <div class="description-main-text">
+
+      <h3 id="sponsors">Sponsors</h3>
+      <h4 id="shenzhen-msu-bit-university">Shenzhen MSU-BIT University</h4>
+      <p>On behalf of our entire team, we would like to sincerely thank Shenzhen MSU-BIT University for making our participation in iGEM possible. Beyond financial support, our university’s encouragement and belief in the importance of student-driven science gave us the foundation to embark on this journey. With the resources, space, and support from our university, we were able to grow not only as researchers but also as a team.</p>
+      <p>This year we also took an important step forward: we officially founded the iGEM Student Club at SMBU. By creating a permanent community, we hope future students can continue exploring synthetic biology, bring their own ideas to life, and proudly represent our university on the global stage.</p>
+
+      <h3 id="partners">Partners</h3>
+      <h4 id="shenzhen-hospital-beijing-university-of-chinese-medicine">Shenzhen Hospital, Beijing University of Chinese Medicine</h4>
+      <p>We are grateful to the hospital for supporting us in organizing health awareness activities on campus and for providing expert lectures. Their collaboration strengthened the impact of our educational initiatives and allowed us to connect directly with our local community.</p>
+
+      <h4 id="igem-community">iGEM Community</h4>
+      <p>Throughout the season, we connected with many iGEM teams. These interactions reminded us that iGEM is not only about science, but also about collaboration and exchange. Conversations, meet-ups, and feedback sessions inspired us and helped us refine our approach. We would like to thank all the teams we met this year for their openness, insights, and encouragement — you made our journey even more meaningful.</p>
+
+    </div>
+
+    <nav class="side-menu dynamic">
+      <h4 class="menu-title">Contents</h4>
+      <ul id="dynamic-menu-list">
+        </ul>
+    </nav>
+  </div>
+
+<script src="{{ url_for('static', filename='js/menu-script.js') }}"></script>
+
+{% endblock %}

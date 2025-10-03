@@ -1,0 +1,1698 @@
+/* Импортируем шрифты Inter и Oswald */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;700&display=swap");
+
+body {
+  padding-top: 56px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+
+.left-aligned {
+  margin-left: auto;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-hero {
+  background-color: #45b06cff;
+}
+
+/* CALLOUT */
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.bd-callout h4 {
+  margin-bottom: 1.25rem;
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bd-callout code {
+  border-radius: 0.25rem;
+}
+
+.bd-callout + .bd-callout {
+  margin-top: -0.25rem;
+}
+
+.bd-callout-info {
+  border-left-color: #5bc0de;
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f;
+}
+
+/* footer */
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* == ОБЩИЕ НАСТРОЙКИ == */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* == СТИЛИ БАННЕРОВ (Шрифт Oswald) == */
+.banner-bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.description-wrapper-content .logo,
+.home-wrapper-content .logo {
+  position: absolute;
+  top: clamp(2rem, 8vw, 9rem);
+  left: clamp(1rem, 5vw, 8rem);
+  width: clamp(80px, 10vw, 160px);
+  height: auto;
+  z-index: 3;
+}
+
+.description-wrapper-content .logo svg,
+.home-wrapper-content .logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.description-wrapper-section,
+.home-wrapper-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.description-wrapper-section::before,
+.home-wrapper-section::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.description-wrapper-content,
+.home-wrapper-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5vw;
+  z-index: 2;
+}
+
+.home-wrapper-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.home-wrapper-text-yellow {
+  color: #fff200;
+}
+
+.description-wrapper-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1.5rem, 4vw, 4.5rem);
+  line-height: 1.1;
+  color: #000;
+  margin: 0 0 0.5rem;
+}
+
+.description-wrapper-guardian {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #000;
+  margin: 0;
+}
+
+/* == НАСТРОЙКИ HOME.HTML == */
+.home-main-stats {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  width: 90vw;
+  max-width: 1632px;
+  margin: 80px auto 0;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+.home-about-baruch-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1632px;
+  width: 90vw;
+  margin: 64px auto 0;
+  gap: 48px;
+}
+
+.home-about-baruch__text {
+  width: 900px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+.home-about-baruch__photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-about-baruch__photo img {
+  width: 620px;
+  height: 498px;
+  object-fit: cover;
+  border-radius: 45px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.home-engineering-section {
+  max-width: 1632px;
+  width: 90vw;
+  margin: 70px auto 0;
+}
+
+.home-engineering-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.home-engineering-desc {
+  font-size: 36px;
+  line-height: 41px;
+  text-align: left;
+  margin-right: 52px;
+  margin-bottom: 100px;
+}
+
+.home-final-scheme {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.home-final-scheme img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* == НАСТРОЙКИ СТРАНИЦ С ТЕКСТОМ (Description, Human Practices) == */
+.description-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 3rem;
+  padding: 0 1rem 0 5rem;
+}
+
+.description-main-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.description-main-text p,
+.description-main-text ul {
+  margin-bottom: 25px;
+}
+
+.description-main-text ul {
+  padding-left: 25px;
+}
+
+.description-main-text li {
+  margin-bottom: 10px;
+}
+
+.description-main-text h3 {
+  margin: 50px 0 25px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.description-main-text h4 {
+  margin: 40px 0 20px;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.description-main-text h3:first-child {
+  margin-top: 0;
+}
+
+/* == ОБЩИЕ СТИЛИ ДЛЯ БОКОВОГО МЕНЮ == */
+.side-menu {
+  position: sticky;
+  top: 80px;
+  width: 380px;
+  flex-shrink: 0;
+  border-left: 2px solid #e9ecef;
+  padding-left: 2rem;
+}
+
+.side-menu h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  margin-bottom: 1rem;
+}
+
+/* Ссылки в простом (нединамическом) меню */
+.side-menu:not(.dynamic) a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+.side-menu:not(.dynamic) a:hover {
+  color: #000;
+}
+
+/* == СТИЛИ ТОЛЬКО ДЛЯ ДИНАМИЧЕСКОГО МЕНЮ (.side-menu.dynamic) == */
+
+/* Основной пункт (H3) */
+.side-menu.dynamic .menu-item-h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu.dynamic .menu-item-h3 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600; /* Не жирный, но и не тонкий */
+  transition: color 0.2s;
+  flex-grow: 1;
+}
+.side-menu.dynamic .menu-item-h3 a:hover {
+  color: #000;
+}
+
+/* Активный родительский пункт (H3) */
+.side-menu.dynamic > ul > li.active-parent .menu-item-h3 a {
+  color: #000;
+}
+
+/* Вложенный список (H4) */
+.side-menu.dynamic .submenu {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-top: 0.75rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.side-menu.dynamic .submenu li {
+  margin-bottom: 0.75rem;
+}
+
+.side-menu.dynamic .submenu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+
+.side-menu.dynamic .submenu a:hover {
+  color: #000;
+}
+
+/* Активный пункт H4 (жирный) */
+.side-menu.dynamic .submenu a.active {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Показываем подменю при наведении на родителя или когда оно открыто */
+.side-menu.dynamic li:hover .submenu,
+.side-menu.dynamic li.open .submenu {
+  max-height: 1000px; /* Достаточно большая высота для всех пунктов */
+  transition: max-height 0.5s ease-in;
+}
+
+/* Кнопка-стрелка для мобильных */
+.side-menu.dynamic .submenu-toggle {
+  display: none; /* Скрыта на десктопе */
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.side-menu.dynamic .submenu-toggle svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+}
+
+.side-menu.dynamic li.open .submenu-toggle svg {
+  transform: rotate(90deg);
+}
+
+/* == ФУТЕР == */
+.footer-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+/* == АДАПТАЦИИ == */
+/* Планшеты (до 1200px) */
+@media (max-width: 1199.98px) {
+  .description-layout {
+    padding: 0 0.5rem 0 2rem;
+    gap: 2rem;
+  }
+  .description-main-text {
+    font-size: 20px;
+  }
+  .description-main-text h3 {
+    font-size: 34px;
+  }
+  .description-main-text h4 {
+    font-size: 28px;
+  }
+  .side-menu {
+    width: 300px;
+  }
+  .side-menu a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Маленькие планшеты и мобилки (до 991px) */
+@media (max-width: 991.98px) {
+  .description-layout {
+    flex-direction: column-reverse; /* Меню становится сверху */
+    padding: 0 1.5rem;
+  }
+  .side-menu {
+    position: static;
+    width: 100%;
+    border-left: none;
+    border-bottom: 2px solid #e9ecef;
+    padding: 0 0 1.5rem 0;
+    margin-bottom: 2rem;
+  }
+  /* Показываем стрелку на мобильных */
+  .side-menu.dynamic .submenu-toggle {
+    display: inline-block;
+  }
+  /* На тач-устройствах убираем раскрытие по hover */
+  .side-menu.dynamic li:hover .submenu {
+    max-height: 0;
+  }
+  .side-menu.dynamic li.open:hover .submenu,
+  .side-menu.dynamic li.open .submenu {
+    max-height: 1000px;
+  }
+}
+
+/* Телефоны (до 767px) */
+@media (max-width: 767.98px) {
+  .description-layout {
+    padding: 0 1rem;
+  }
+
+  .description-main-text {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .description-main-text h3 {
+    font-size: 28px;
+    margin: 40px 0 20px;
+  }
+  .description-main-text h4 {
+    font-size: 24px;
+  }
+
+  /* Остальные стили для мобильных */
+  .home-main-stats {
+    font-size: 18px;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 20px 10px;
+  }
+  .home-about-baruch-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .home-about-baruch__text {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  .home-about-baruch__photo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .home-engineering-title {
+    font-size: 24px;
+    margin: 40px 0;
+  }
+  .home-engineering-desc {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-right: 0;
+  }
+  .footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .col-lg-3 {
+    margin-top: 20px;
+  }
+}
+
+/* == СТИЛИ ДЛЯ СТРАНИЦЫ КОМАНДЫ (members.html) == */
+
+.members-page-container {
+  padding: 2rem 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.team-intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.team-intro h1 {
+  font-family: "Inter", sans-serif; /* <<< UPDATED */
+  font-weight: 700; /* <<< UPDATED */
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.team-intro p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-section {
+  margin-bottom: 4rem;
+}
+
+.team-section-title {
+  font-family: "Inter", sans-serif; /* <<< UPDATED */
+  font-weight: 700; /* <<< UPDATED */
+  font-size: 2rem;
+  color: #003ea0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.team-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #003ea0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* === MEMBER CARD STYLES START === */
+
+.member-card {
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.member-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 62, 160, 0.2);
+  z-index: 10;
+}
+
+.member-card-visible {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.member-card:hover .member-photo {
+  transform: scale(1.05);
+}
+
+.member-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 41, 107, 0.98) 30%,
+    rgba(0, 41, 107, 0.9) 70%,
+    transparent 100%
+  );
+  color: white;
+  padding: 1.5rem;
+}
+
+.member-name {
+  font-family: "Inter", sans-serif; /* <<< UPDATED */
+  font-weight: 700; /* <<< UPDATED */
+  font-size: 1.75rem;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.member-role {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+  min-height: 1.2em;
+}
+
+.member-card-expanded {
+  background-color: #ffffff;
+  color: #333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 0 1.5rem;
+  z-index: 1;
+  transition: max-height 0.3s ease-in-out, opacity 0.15s ease-in-out,
+    padding 0.3s ease-in-out;
+  box-sizing: border-box;
+  border-left: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.member-card:hover .member-card-expanded {
+  max-height: 800px;
+  opacity: 1;
+  padding: 1.5rem;
+  transition: max-height 0.35s ease-in-out, opacity 0.2s 0.1s ease-in-out,
+    padding 0.35s ease-in-out;
+}
+
+.member-bio {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.member-bio:empty {
+  display: none;
+}
+/* === MEMBER CARD STYLES END === */
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767.98px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* == СТИЛИ ДЛЯ КАРУСЕЛИ (members.html) == */
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16 / 9; /* Задает пропорции 16:9, можно поменять при необходимости */
+}
+
+.carousel-slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 41, 107, 0.6);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s;
+  border-radius: 8px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 41, 107, 0.9);
+}
+
+.carousel-button.prev {
+  left: 15px;
+}
+
+.carousel-button.next {
+  right: 15px;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dot.active,
+.carousel-dot:hover {
+  background-color: white;
+}
+
+/* Адаптация карусели для мобильных */
+@media (max-width: 767.98px) {
+  .carousel-button {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.75rem;
+  }
+  .carousel-dots {
+    bottom: 10px;
+  }
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+/* ======================================== */
+/* 0. БАЗОВЫЙ СБРОС СТИЛЕЙ                  */
+/* ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================================== */
+/* 1. СТИЛИ ДЛЯ ВСЕЙ СТРАНИЦЫ (BODY)       */
+/* ======================================== */
+html,
+body {
+  background: #fff; /* Фон за пределами обёртки, чтобы не было чёрных полос */
+  overflow-x: hidden;
+}
+
+/* ======================================== */
+/* A. ОБЁРТКА ДЛЯ ВСЕЙ СТРАНИЦЫ             */
+/* ======================================== */
+.page-wrapper {
+  /* --- ГРАДИЕНТ --- */
+  background-image: linear-gradient(180deg, #0025b2 0%, #000 85%, #8e0d0d 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Градиент теперь занимает 100% высоты своего блока */
+
+  /* --- ВЫСОТА --- */
+  height: 250vh;
+
+  /* --- ЗАКРУГЛЕНИЯ --- */
+  border-bottom-left-radius: 5.73vw;
+  border-bottom-right-radius: 5.73vw;
+}
+
+/* ======================================== */
+/* 2. ГЛАВНЫЙ ЭКРАН (HERO)                 */
+/* ======================================== */
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ======================================== */
+/* 3. ЭЛЕМЕНТЫ ВНУТРИ HERO                 */
+/* ======================================== */
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74.2vw;
+  background: linear-gradient(180deg, #0025b2 48.08%, rgba(0, 36, 178, 0) 100%);
+  z-index: 1;
+}
+
+.logo-top-left {
+  position: absolute;
+  left: 8vw;
+  top: 8vw;
+  width: 9vw;
+  height: auto;
+  z-index: 2;
+}
+
+.logo-top-left svg {
+  width: 100%;
+  height: auto;
+}
+.logo-top-left .logo-bg {
+  fill: white;
+}
+.logo-top-left .logo-text {
+  fill: #0025b2;
+}
+
+.logo-center {
+  position: absolute;
+  left: 14vw;
+  top: 40vh;
+  width: 71vw;
+  height: auto;
+  z-index: 2;
+}
+
+.cloud-bottom-left {
+  position: absolute;
+  top: 47vh;
+  right: 45vw;
+  width: 81vw;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.cloud-top-right {
+  position: absolute;
+  top: 1.3vh;
+  left: 69vw;
+  width: 41vw;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* ======================================== */
+/* 4. КОНТЕНТ ПОД ГЛАВНЫМ ЭКРАНОМ          */
+/* ======================================== */
+.content-section {
+  padding: 0 1.04vw; /* 20px / 1920px */
+}
+
+/* --- Стили для текста "555" --- */
+.counter-text {
+  color: #f00;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 13vw;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 1vh;
+}
+
+/* ======================================== */
+/* 5. БЛОК СО СТАТИСТИКОЙ (STATS)          */
+/* ======================================== */
+.stats-text {
+  margin: 22vh auto 0;
+  padding: 0 1.04vw; /* 20px / 1920px */
+  color: #fff;
+  text-align: center;
+  font-family: "Franklin Gothic Heavy", "Arial Black", sans-serif;
+  font-size: 1.67vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875;
+  text-transform: uppercase;
+}
+
+/* ======================================== */
+/* 6. ДЕКОРАТИВНОЕ ИЗОБРАЖЕНИЕ (ZAVITUSHKA) */
+/* ======================================== */
+.zavitushka-image {
+  display: block;
+  width: 70vw;
+  height: auto;
+  margin: -41vh 20vw 0 auto;
+  transform: rotate(3deg);
+}
+
+/* ======================================== */
+/* 7. ТЕКСТ ПОД СЧЕТЧИКОМ (WIKI LAUNCH)     */
+/* ======================================== */
+.wiki-launch-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 3.75vw;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  position: relative;
+  z-index: 2;
+}
+
+/* ======================================== */
+/* 8. ИНФОРМАЦИОННЫЙ БЛОК НА БЕЛОМ ФОНЕ     */
+/* ======================================== */
+.info-section {
+  padding: 7vh 0 7vh 5vw;
+}
+
+.info-grid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.info-text-block {
+  width: 100%;
+  max-width: 25.1vw; /* 482px / 1920px */
+  color: #000;
+  font-family: "Inter", sans-serif;
+  flex-shrink: 0;
+}
+
+.info-text-block h2 {
+  font-size: 3.07vw;
+  font-weight: 800;
+  line-height: 0.88; /* 52px / 59px */
+  text-transform: uppercase;
+  margin-bottom: 3.7vh; /* 40px / 1080px */
+}
+
+.info-text-block p {
+  font-size: 1.67vw;
+  font-weight: 600;
+  line-height: 1.25; /* 40px / 32px */
+  text-transform: uppercase;
+}
+
+.carousel-container {
+  position: relative;
+  width: 62.2vw;
+  aspect-ratio: 1195/672;
+  margin-left: 5vw;
+  border-radius: 5.73vw;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 1.38vh; /* 15px / 1080px */
+  cursor: pointer;
+  font-size: 1.25vw;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carousel-button.prev {
+  left: 1.04vw; /* 20px / 1920px */
+}
+
+.carousel-button.next {
+  right: 1.04vw; /* 20px / 1920px */
+}
+
+/* ======================================== */
+/* 9. ФИНАЛЬНЫЙ ТЕКСТОВЫЙ БЛОК             */
+/* ======================================== */
+.final-text-section {
+  padding: 0 5vw;
+  margin-top: -1vw;
+  text-align: center;
+}
+
+.breaking-cycle-text {
+  max-width: 92.55vw; /* 1777px / 1920px */
+  margin: 0 auto;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 1.67vw;
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.breaking-cycle-text a {
+  color: #006fd0;
+  text-decoration: underline;
+}
+
+/* ======================================== */
+/* 10. БЛОК С УЧЕНЫМИ                       */
+/* ======================================== */
+.scientists-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vh 5vw;
+}
+
+.scientists-image {
+  width: 35%;
+  max-width: 41.67vw; /* 800px / 1920px */
+  height: auto;
+  transform: rotate(0deg) translateX(-2vw);
+}
+
+.nobel-prize-block {
+  position: relative;
+  width: 61.7vw;
+  max-width: 61.72vw; /* 1185px / 1920px */
+  margin-left: -10vw;
+}
+
+.nobel-prize-svg {
+  width: 79%;
+  height: auto;
+  transform: rotate(0deg) translateX(19vw);
+}
+
+.nobel-prize-text {
+  position: absolute;
+  top: 8vw;
+  left: 40vw;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 52.4vw; /* 1006px / 1920px */
+  color: #000;
+  text-align: right;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+/* ======================================== */
+/* 11. БЛОК С ИНФОРМАЦИЕЙ О ВАКЦИНЕ      */
+/* ======================================== */
+.vaccine-info-section {
+  padding: 0 5vw;
+  margin-top: 3.33vw;
+  text-align: center;
+}
+
+.vaccine-info-section p {
+  max-width: 91.3vw; /* 1753px / 1920px */
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-family: Inter, sans-serif;
+  text-transform: uppercase;
+}
+
+.vaccine-info-header {
+  font-size: 2.08vw;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2em;
+}
+
+.vaccine-info-body {
+  font-size: 1.875vw;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* ======================================== */
+/* 12. ФИНАЛЬНЫЙ СЕРЫЙ БЛОК                */
+/* ======================================== */
+.placeholder-section {
+  padding: 5vh 5vw;
+}
+
+.grey-placeholder {
+  width: 84.4vw;
+  height: 23.6vw;
+  border-radius: 5.73vw;
+  background: #d9d9d9;
+  margin: 0 auto;
+}
+
+/* ======================================== */
+/* 12.5. СЕКЦИЯ "ENGINEERED SYSTEM"         */
+/* ======================================== */
+.engineered-system-section {
+  margin-top: 1vh;
+  padding: 0 5vw;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.engineered-system-text {
+  max-width: 72.3vw; /* 1388px / 1920px */
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 4.63vw;
+  font-weight: 700;
+  line-height: 85.394%;
+  text-transform: uppercase;
+}
+
+.engineered-system-text .large-text {
+  display: block;
+  margin-top: 3vh;
+  font-size: 7.42vw;
+}
+
+/* ======================================== */
+/* 13. СЕКЦИЯ С АВТОМОБИЛЕМ (ИЗМЕНЕНО)      */
+/* ======================================== */
+.car-section {
+  padding: 5vh 0;
+  overflow: hidden;
+  position: relative;
+  margin-top: -25vh;
+  z-index: 1;
+}
+
+.car-image {
+  width: 120vw;
+  max-width: none;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ======================================== */
+/* 14. СЕКЦИЯ С ОПИСАНИЕМ CRISPR           */
+/* ======================================== */
+.crispr-info-section {
+  margin-top: -19vh;
+  padding: 0 5vw;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.crispr-header {
+  max-width: 89.375vw; /* 1716px / 1920px */
+  margin: 0 auto 4.63vh auto; /* 50px / 1080px */
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crispr-body {
+  max-width: 88vw; /* 1690px / 1920px */
+  margin: 0 auto;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 1.875vw;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.crispr-body a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* ======================================== */
+/* 15. СЕКЦИЯ С ВИДЕОБАННЕРОМ              */
+/* ======================================== */
+.video-banner-section {
+  text-align: center;
+  padding: 5vh 0;
+  margin-top: 5vh;
+}
+
+.video-banner-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 5.73vw;
+}
+
+/* ======================================== */
+/* 16. СЕКЦИЯ ССЫЛКИ НА YOUTUBE            */
+/* ======================================== */
+.youtube-link-section {
+  text-align: center;
+  padding: 2vh 0 5vh 0;
+}
+
+.youtube-link {
+  display: inline-block;
+  width: 61.3vw; /* 1177px / 1920px */
+  max-width: 90%;
+  height: 13.6vh; /* 147px / 1080px */
+  color: #006fd0;
+  font-family: "Inter", sans-serif;
+  font-size: 2.08vw;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 13.6vh; /* 147px / 1080px */
+}
+
+/* ======================================== */
+/* 17. СЕКЦИЯ С ГОРОЙ И ЗНАКОМ (ИЗМЕНЕНО)  */
+/* ======================================== */
+.mountain-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.mountain-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(to bottom, white 30%, transparent 100%);
+  z-index: 2;
+}
+
+.mountain-image-container {
+  position: relative;
+  width: 100%;
+}
+
+.mountain-image {
+  width: 102.315%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -1.16vw; /* 22.222px / 1920px */
+  margin-top: -15.18vh; /* 164px / 1080px */
+  z-index: 1;
+  display: block;
+}
+
+.roadsign-image {
+  position: absolute;
+  right: -10vw; /* подгони под макет */
+  bottom: -1vh; /* или px/vw, как удобнее */
+  width: 118vw;
+  height: auto;
+  z-index: 4;
+}
+
+/* ======================================== */
+/* 18. ЭЛЕМЕНТЫ ФУТЕРА (ИЗМЕНЕНО)           */
+/* ======================================== */
+
+.footer-left-content {
+  position: absolute;
+  left: 6.5vw;
+  bottom: 7.5vh;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-contact-block {
+  text-align: left;
+  margin-bottom: 1.85vh;
+}
+
+.contact-header {
+  width: 26.67vw;
+  max-width: 100%;
+  color: #fff800;
+  font-family: Inter, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.contact-emails {
+  width: 39.74vw;
+  max-width: 100%;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 700;
+  text-transform: lowercase;
+  line-height: normal;
+}
+
+.footer-logo-left {
+  width: 9vw;
+  height: 6.57vh;
+}
+
+.footer-logo-left svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-logo-right {
+  position: absolute;
+  right: 4.48vw;
+  bottom: 7.96vh;
+  z-index: 5;
+  width: 9vw;
+  height: auto;
+}
+
+/* =================================================================== */
+/* =================================================================== */
+/* ADAPTIVE STYLES (NEW)                         */
+/* =================================================================== */
+/* =================================================================== */
+
+/* ======================================== */
+/* 19. TABLET STYLES (≤ 992px)              */
+/* ======================================== */
+@media (max-width: 992px) {
+  .page-wrapper {
+    border-bottom-left-radius: 8vw;
+    border-bottom-right-radius: 8vw;
+  }
+
+  /* --- HERO --- */
+  .logo-top-left {
+    width: 15vw;
+  }
+  .logo-center {
+    top: 38vh;
+    left: 10vw;
+    width: 80vw;
+  }
+  .cloud-bottom-left {
+    width: 100vw;
+  }
+  .cloud-top-right {
+    left: 60vw;
+    width: 50vw;
+  }
+
+  /* --- FONTS --- */
+  .stats-text {
+    font-size: 2.5vw;
+    margin-top: 15vh;
+  }
+  .counter-text {
+    font-size: 20vw;
+  }
+  .wiki-launch-text {
+    font-size: 5vw;
+  }
+
+  /* --- ZAVITUSHKA --- */
+  .zavitushka-image {
+    margin-top: -30vh;
+  }
+
+  /* --- INFO SECTION --- */
+  .info-section {
+    padding: 5vh 5vw;
+  }
+  .info-grid {
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .info-text-block {
+    max-width: 100%;
+    text-align: center;
+  }
+  .info-text-block h2 {
+    font-size: 6vw;
+    line-height: 1;
+  }
+  .info-text-block p {
+    font-size: 3vw;
+  }
+  .carousel-container {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  /* --- FINAL TEXT --- */
+  .final-text-section {
+    margin-top: 3vh;
+  }
+  .breaking-cycle-text {
+    font-size: 2.5vw;
+  }
+
+  /* --- SCIENTISTS SECTION --- */
+  .scientists-section {
+    flex-direction: column;
+    gap: 5vh;
+    padding-top: 2vh;
+  }
+  .scientists-image {
+    width: 60%;
+    max-width: none;
+    transform: none;
+  }
+  .nobel-prize-block {
+    width: 90vw;
+    max-width: none;
+    margin-left: 0;
+  }
+  .nobel-prize-svg {
+    transform: none;
+    width: 100%;
+  }
+  .nobel-prize-text {
+    font-size: 3.5vw;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+
+  /* --- VACCINE INFO --- */
+  .vaccine-info-header {
+    font-size: 4vw;
+  }
+  .vaccine-info-body {
+    font-size: 3vw;
+  }
+
+  /* --- ENGINEERED SYSTEM --- */
+  .engineered-system-text {
+    font-size: 7vw;
+  }
+  .engineered-system-text .large-text {
+    font-size: 11vw;
+  }
+
+  /* --- CAR & CRISPR --- */
+  .car-section,
+  .crispr-info-section {
+    margin-top: -15vh;
+  }
+  .crispr-header {
+    font-size: 4vw;
+  }
+  .crispr-body {
+    font-size: 3vw;
+  }
+
+  /* --- VIDEO & YOUTUBE --- */
+  .youtube-link {
+    font-size: 3.5vw;
+  }
+
+  /* --- MOUNTAIN & FOOTER --- */
+  .mountain-image {
+    margin-top: -10vh;
+  }
+  .roadsign-image {
+    width: 140vw;
+    right: -20vw;
+  }
+  .footer-left-content {
+    left: 5vw;
+    bottom: 5vh;
+  }
+  .footer-logo-right {
+    right: 5vw;
+    bottom: 5vh;
+    width: 15vw;
+  }
+  .contact-header,
+  .contact-emails {
+    font-size: 3.5vw;
+  }
+  .footer-logo-left {
+    width: 15vw;
+  }
+}
+
+/* ======================================== */
+/* 20. MOBILE STYLES (≤ 768px)              */
+/* ======================================== */
+@media (max-width: 768px) {
+  /* --- FONTS --- */
+  .stats-text {
+    font-size: 16px; /* Fixed size */
+    line-height: 1.6;
+  }
+  .counter-text {
+    font-size: 28vw;
+  }
+  .wiki-launch-text {
+    font-size: 6vw;
+  }
+  .zavitushka-image {
+    width: 90vw;
+    margin: -20vh auto 0;
+  }
+
+  /* --- INFO SECTION --- */
+  .info-text-block h2 {
+    font-size: 8vw;
+  }
+  .info-text-block p {
+    font-size: 4.5vw;
+  }
+  .carousel-button {
+    font-size: 16px; /* Fixed size */
+    padding: 8px;
+  }
+  .breaking-cycle-text {
+    font-size: 16px; /* Fixed size */
+  }
+
+  /* --- SCIENTISTS SECTION --- */
+  .scientists-image {
+    width: 80%;
+  }
+  .nobel-prize-text {
+    font-size: 18px; /* Fixed size */
+    line-height: 1.4;
+  }
+
+  /* --- VACCINE INFO --- */
+  .vaccine-info-header {
+    font-size: 20px; /* Fixed size */
+  }
+  .vaccine-info-body {
+    font-size: 16px; /* Fixed size */
+    line-height: 1.5;
+  }
+
+  /* --- ENGINEERED SYSTEM --- */
+  .engineered-system-text {
+    font-size: 9vw;
+  }
+  .engineered-system-text .large-text {
+    font-size: 14vw;
+  }
+
+  /* --- CAR & CRISPR --- */
+  .car-section,
+  .crispr-info-section {
+    margin-top: -10vh;
+  }
+  .crispr-header {
+    font-size: 18px; /* Fixed size */
+  }
+  .crispr-body {
+    font-size: 16px; /* Fixed size */
+  }
+
+  /* --- YOUTUBE LINK --- */
+  .youtube-link {
+    font-size: 18px; /* Fixed size */
+    width: 90vw;
+    line-height: 1.5;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* --- MOUNTAIN & FOOTER --- */
+  .mountain-section {
+    padding-bottom: 200px; /* Make space for footer */
+  }
+  .mountain-image {
+    margin-top: 0;
+  }
+  .roadsign-image {
+    width: 180vw;
+    right: -45vw;
+    bottom: 120px;
+  }
+  .footer-left-content {
+    position: relative; /* Change from absolute */
+    bottom: auto;
+    left: auto;
+    align-items: center;
+    padding-top: 50vh; /* Push it down */
+  }
+  .footer-logo-right {
+    position: relative; /* Change from absolute */
+    display: block;
+    margin: 20px auto 0;
+    bottom: auto;
+    right: auto;
+    width: 25vw;
+  }
+  .footer-contact-block {
+    text-align: center;
+  }
+  .contact-header,
+  .contact-emails {
+    font-size: 18px; /* Fixed size */
+    width: 100%;
+  }
+  .footer-logo-left {
+    width: 25vw;
+    height: auto;
+    margin: 0 auto;
+  }
+}

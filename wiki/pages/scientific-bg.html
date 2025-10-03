@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Scientific Background{% endblock %}
+
+{% block page_content %}
+</div>
+
+  <!-- Общий контейнер для контента и бокового меню -->
+  <div class="description-layout">
+      
+    <!-- основной текст -->
+    <div class="description-main-text">
+
+      <h3 id="molecular-basis">Molecular Basis of HBV Persistence</h3>
+      <p>The life cycle of the hepatitis B virus (HBV) is complex and includes multiple stages, each playing a critical role in viral persistence. After entering hepatocytes, the partially double-stranded virion DNA is transported into the nucleus, where it is converted into covalently closed circular DNA (cccDNA). This episomal DNA serves as a stable epigenetic template for the transcription of all viral RNAs required to produce new viral particles.</p>
+      <p>cccDNA is extraordinarily stable: it can persist in the nucleus for years and is not eliminated by current therapeutic approaches. This is the main reason why HBV remains a chronic and difficult-to-cure infection. One of the viral proteins involved in regulating cccDNA activity is HBx — a transcriptional activator that interacts with host chromatin and epigenetic machinery to modulate gene expression.</p>
+      <p>Recent studies have shown that HBV exploits host chromatin remodeling factors and may interact with nucleosomal sites via both viral and host proteins. For example, interactions with the nucleosomal supergroove — demonstrated for Haspin kinase — suggest possible analogous mechanisms for viral factors. Histone modifications such as acetylation and methylation also play a role in determining the accessibility of cccDNA for transcription.</p>
+      <p>Despite this growing understanding of the molecular underpinnings of cccDNA persistence, efforts to eliminate it using traditional antiviral therapies remain unsuccessful. In this context, novel bioengineering strategies capable of long-term suppression or silencing of cccDNA transcriptional activity are gaining attention.</p>
+      <p>The transition from cccDNA to rcDNA (relaxed circular DNA) is a key step in the HBV life cycle. Elimination of cccDNA is particularly challenging because of its stability and persistence in the nucleus, where it acts as a long-term reservoir for viral RNA transcription. Although several strategies for its elimination have been proposed, none are fully effective with current therapeutic methods.</p>
+      <p>Complete eradication of cccDNA remains the ultimate goal in treating chronic hepatitis B. Current therapies — including interferons and nucleos(t)ide analogues — suppress viral replication but do not destroy cccDNA. Promising approaches involve using CRISPR/Cas technologies to silence or degrade cccDNA.</p>
+      <p>One of the most promising directions involves using dCas proteins — catalytically inactive versions of Cas — to regulate gene expression without introducing DNA breaks. These systems can modulate the epigenetic landscape around cccDNA loci and have been shown to induce long-lasting changes in gene expression.</p>
+      <p>However, even dCas-based systems can retain off-target activity. To address this, various strategies have been developed, including engineered Cas variants, modified guide RNAs, and dual-guide RNA systems. These approaches have been reported to improve editing precision by up to 1500-fold. Additionally, fusing dCas proteins with methyltransferase domains enhances specificity and efficacy of epigenetic modulation.</p>
+      <p>Thus, in the context of chronic HBV infection, the development of highly specific CRISPR-based epigenetic platforms targeting cccDNA — without compromising host genome integrity — emerges as a key strategy in overcoming viral persistence and achieving long-term suppression.</p>
+      
+      <h3 id="crispr-approaches">CRISPR/Cas Approaches in HBV Therapy</h3>
+      <p>CRISPR/Cas technologies (e.g., Cas9, dCas9, Cas13a) have emerged as targeted tools to disrupt viral genomes or regulate their transcription.</p>
+      <p>The sole critical target of CRISPR/Cas systems in HBV treatment is cccDNA — the transcriptional template for viral pregenomic RNA (pgRNA) and subgenomic RNAs. To ensure efficacy across HBV genotypes (A–J) and avoid viral escape, targets are selected from evolutionarily conserved genomic regions. The <strong>S gene</strong> (encoding HBsAg, a key persistence marker) is prioritized; targeting its conserved regions reduces HBsAg secretion and viral envelope formation. The <strong>X gene</strong> (encoding HBx, a regulator of cccDNA transcription) is also critical — HBx degrades the host SMC5/6 complex (a cccDNA restriction factor), so editing the X gene blocks both viral transcription and oncogenic signaling. Additionally, the <strong>C gene</strong> (encoding HBcAg/HBeAg) and <strong>P gene</strong> (encoding viral polymerase) are targeted to limit pgRNA encapsidation and reverse transcription, respectively.</p>
+      <p>CRISPR/Cas systems act exclusively during the persistent infection stage, when cccDNA is established in hepatocyte nuclei and sustains chronic viral production. Key sub-stages of intervention include cccDNA transcription, cccDNA repair, prevention of cccDNA stabilization, and cccDNA maintenance.</p>
+      <p>The dominant approach across studies is <strong>site-specific DNA/RNA cutting</strong>. Most studies use CRISPR/Cas9 (or Cas12a, a Cas variant with broader targeting) to introduce double-strand breaks (DSBs) in cccDNA. DSBs trigger the cell’s error-prone non-homologous end joining (NHEJ) repair pathway, leading to deletions, insertions, or mutations in cccDNA — rendering it non-functional. A few studies have tested multi-sgRNA designs to enhance cleavage efficiency and reduce viral escape through mutations. In <strong>base editing</strong>, a catalytically impaired Cas9 (nickase) fused to cytosine deaminases introduces C→T point mutations, creating premature stop codons in cccDNA or integrated HBV DNA. Furthermore, in <strong>transcriptional repression</strong>, dCas9 fused to repressors (e.g., KRAB) has been demonstrated to silence cccDNA by targeting viral promoters.</p>
+      <p>Efficient, hepatocyte-specific delivery is critical for translation, with studies evaluating viral and non-viral platforms. Adeno-associated virus (AAV) vectors are the most commonly cited. They have low immunogenicity, can transduce non-dividing hepatocytes, and persist long enough to express CRISPR/Cas components. Non-viral vectors such as lipid nanoparticles (LNPs) are highlighted as a safer alternative to viral vectors. They can encapsulate CRISPR/Cas plasmids or mRNA, protect them from degradation, and target hepatocytes via surface ligands. Plasmid transfection is also common in preclinical models for rapid validation but limited clinically by low in vivo efficiency.</p>
+      <p>Hepatocyte-derived cell models are used to mimic the in vivo host environment for preclinical validation. The most common models are <strong>HepG2 cells</strong> (derived from human hepatocellular carcinoma) and <strong>HepAD38 cells</strong> (a HepG2-derived cell line with tetracycline-inducible HBV replication and cccDNA formation). These cell lines are easy to culture and enable the long-term testing of CRISPR/Cas efficiency. Some studies also use <strong>human primary hepatocytes (HPHs) </strong> to better recapitulate normal hepatocyte physiology, although these are more difficult to obtain and maintain.</p>
+    </div>
+
+    <!-- Боковое меню -->
+    <nav class="side-menu">
+      <h4>Contents</h4>
+      <ul>
+        <li><a href="#molecular-basis">Molecular Basis of HBV Persistence</a></li>
+        <li><a href="#crispr-approaches">CRISPR/Cas Approaches in HBV Therapy</a></li>
+      </ul>
+    </nav>
+  </div>
+{% endblock %}
