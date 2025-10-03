@@ -1,278 +1,87 @@
-{% extends "layout.html" %} {% block title %}HEPZERO Hero Block{% endblock %} {%
-block page_content %}
+{% extends "layout.html" %}
 
-<div class="page-wrapper">
-  <section class="hero">
-    <div class="hero-background"></div>
-
-    <div class="hero-content">
-      <div class="logo-top-left">
-        <svg
-          width="173"
-          height="71"
-          viewBox="0 0 173 71"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M33.3827 0.0551158C22.1595 0.721131 12.0365 6.57025 5.82841 15.975C1.2592 22.907 -0.709797 31.1826 0.228374 39.545C1.4561 50.4728 7.75688 60.2715 17.1965 65.9294C22.1884 68.9293 27.5973 70.5856 33.4985 70.933C34.8421 71.0084 137.641 71.0084 139.042 70.933C149.611 70.3365 159.143 65.2346 165.508 56.7679C171.896 48.2664 174.102 37.2343 171.496 26.7871C168.467 14.643 159.068 4.89069 147.034 1.40448C144.405 0.639955 141.851 0.205751 139.042 0.0492564C137.832 -0.0202016 34.5352 -0.0143422 33.3827 0.0551158ZM152.692 20.2372C154.539 20.5095 156.12 21.3666 157.325 22.7449C159.224 24.9166 160.69 28.7734 161.107 32.7056C161.286 34.3676 161.275 37.0258 161.078 38.7632C160.8 41.2591 160.203 43.4598 159.259 45.423C157.754 48.556 155.808 50.2527 153.045 50.8434C152.246 51.0173 150.735 51.0521 149.878 50.9304C147.179 50.5308 145.1 48.8976 143.565 45.9672C142.401 43.7552 141.695 41.2651 141.376 38.3C141.243 37.0085 141.243 33.916 141.376 32.6362C141.677 29.8391 142.297 27.5805 143.328 25.5303C144.92 22.3625 147.173 20.5848 150.074 20.2083C150.74 20.1271 152.038 20.1389 152.692 20.2372ZM20.9607 26.399V32.2481H24.6091H28.2575V26.399V20.55H30.9504H33.6433V35.5201V50.4903H30.9504H28.2575V44.3226V38.1551H24.6091H20.9607V44.3226V50.4903H18.2388H15.517V35.5201V20.55H18.2388H20.9607V26.399ZM55.0127 23.3876V26.2253H49.4532H43.8936V29.2946V32.364H48.266H52.6383V35.1727V37.9813H48.266H43.8936V41.2823V44.5833H49.4532H55.0127V47.5368V50.4903H46.6445H38.2763V35.5201V20.55H46.6445H55.0127V23.3876ZM69.1489 20.608C71.9229 20.8858 73.3938 21.7372 74.83 23.9088C75.6234 25.1019 76.0519 26.2311 76.301 27.789C76.4399 28.6518 76.4399 30.6497 76.3067 31.5532C76.0114 33.4932 75.4033 35.19 74.581 36.3598C73.7413 37.5585 72.2471 38.6589 71.0426 38.96C70.145 39.1917 69.7975 39.209 66.815 39.238L63.8731 39.2669V44.8786V50.4903H61.0644H58.2557V35.5201V20.55H63.4041C66.4907 20.55 68.7899 20.5732 69.1489 20.608ZM96.3615 23.1387L96.3557 25.7331L90.4545 35.2305L84.5534 44.7281L90.6283 44.7455L96.709 44.757V47.6236V50.4903H87.2694H77.8298V47.9365V45.3824L83.6963 35.8502C86.9161 30.6092 89.5685 26.3006 89.5743 26.2715C89.5859 26.2485 87.1188 26.2253 84.09 26.2253H78.5826V23.3876V20.55H87.4721H96.3615V23.1387ZM116.457 23.3876V26.2253H110.897H105.338V29.2946V32.364H109.71H114.082V35.1727V37.9813H109.71H105.338V41.2823V44.5833H110.897H116.457V47.5368V50.4903H108.089H99.7204V35.5201V20.55H108.089H116.457V23.3876ZM132.255 20.6832C134.838 21.1234 136.274 22.1889 137.45 24.5401C138.869 27.372 138.955 31.2462 137.67 33.9738C137.154 35.0684 136.147 36.2325 135.104 36.9332C134.803 37.1358 134.548 37.3096 134.537 37.3212C134.525 37.327 135.487 40.2747 136.662 43.8709C137.844 47.4673 138.811 50.4323 138.811 50.4496C138.811 50.4728 137.45 50.4903 135.782 50.4903H132.753L130.964 44.5948L129.168 38.7051L127.211 38.6879L125.259 38.6762V44.5833V50.4903H122.48H119.7V35.5201V20.5443L125.682 20.5673C131.062 20.5848 131.717 20.5963 132.255 20.6832Z"
-            fill="white"
-          />
-          <path
-            d="M150.625 25.9705C149.472 26.2196 148.58 27.0998 147.984 28.5708C147.538 29.6827 147.219 31.3388 147.086 33.2557C146.999 34.5645 147.051 37.9002 147.179 38.9947C147.555 42.2437 148.459 44.2242 149.883 44.9249C151.302 45.6257 152.918 45.2144 153.833 43.9232C154.939 42.3653 155.489 39.597 155.489 35.578C155.489 30.9857 154.736 27.8873 153.306 26.6365C152.785 26.1732 151.945 25.8721 151.233 25.8836C151.105 25.8836 150.833 25.9241 150.625 25.9705ZM152.154 32.8214C153.022 33.1282 153.752 33.8638 154.053 34.7384C154.157 35.0336 154.186 35.2421 154.186 35.7227C154.186 36.2034 154.157 36.4119 154.053 36.7072C153.752 37.576 153.034 38.3056 152.154 38.63C151.887 38.7285 151.679 38.7574 151.175 38.7574C150.225 38.7631 149.652 38.5373 148.991 37.8886C148.43 37.3327 148.146 36.7072 148.094 35.8966C148.001 34.4313 148.939 33.1457 150.393 32.7403C150.833 32.6187 151.696 32.6593 152.154 32.8214Z"
-            fill="white"
-          />
-          <path
-            d="M63.6415 29.9027V33.8811L65.8595 33.858C68.2744 33.8291 68.4017 33.8118 69.1199 33.4642C69.6122 33.2267 70.0118 32.8041 70.3245 32.1959C70.6719 31.5183 70.8226 30.9683 70.863 30.1865C70.9615 28.368 70.2781 26.903 69.0736 26.3412C68.3149 25.9879 68.2107 25.9763 65.8306 25.9473L63.6415 25.9242V29.9027Z"
-            fill="white"
-          />
-          <path
-            d="M125.259 29.7521V33.5801H127.188C130.414 33.5743 130.998 33.4701 131.717 32.7404C132.336 32.1149 132.707 31.2983 132.852 30.2444C133.02 28.9587 132.637 27.6383 131.85 26.7755C131.172 26.0342 130.969 25.9937 127.709 25.9531L125.259 25.9242V29.7521Z"
-            fill="white"
-          />
-        </svg>
-      </div>
-      <img
-        class="logo-center"
-        src="https://static.igem.wiki/teams/5861/homepage/suppressing.webp"
-        alt="HEPZERO Suppressing the expression of HBV genes"
-      />
-      <img
-        class="cloud-bottom-left"
-        src="https://static.igem.wiki/teams/5861/homepage/cloud2.webp"
-        alt="Cloud decoration"
-      />
-      <img
-        class="cloud-top-right"
-        src="https://static.igem.wiki/teams/5861/homepage/cloud3.webp"
-        alt="Cloud decoration"
-      />
-    </div>
-  </section>
-
-  <section class="content-section">
-    <div class="stats-text">
-      <p>
-        254 million people were living with chronic hepatitis B in 2022<br />
-        1.2 million new infections each year<br />
-        1.1 million deaths in 2022, mostly due to cirrhosis and liver cancer<br />
-        Every year, hepatitis B silently kills over a million people — one
-        life<br />
-        every 30 seconds.
-      </p>
-    </div>
-
-    <p class="counter-text" id="counter">0</p>
-
-    <p class="wiki-launch-text">
-      people have died of HBV
-      <br />starting from 2025 iGEM cycle
-    </p>
-
-    <img
-      src="https://static.igem.wiki/teams/5861/homepage/zavitushka.webp"
-      alt="Decorative swirl"
-      class="zavitushka-image"
-    />
-  </section>
+{% block title %}Home{% endblock %}
+{% block page_content %}
 </div>
-<section class="info-section">
-  <div class="info-grid">
-    <div class="info-text-block">
-      <h2>
-        <strong
-          >Hepatitis B <br />doesn’t only <br />take lives — <br />it changes
-          <br />them.</strong
-        >
-      </h2>
+
+  <!-- контейнер баннера -->
+  <div class="home-wrapper-section">
+
+    <!-- баннер -->
+    <img src="https://static.igem.wiki/teams/5861/homepage/hepstop.webp" alt="Banner" class="banner-bg">
+    
+    <!-- контейнер контента баннера -->
+    <div class="home-wrapper-content">
+
+      <!-- лого -->
+      <div class="logo">
+          <svg width="173" height="71" viewBox="0 0 173 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M33.3827 0.0551158C22.1595 0.721131 12.0365 6.57025 5.82841 15.975C1.2592 22.907 -0.709797 31.1826 0.228374 39.545C1.4561 50.4728 7.75688 60.2715 17.1965 65.9294C22.1884 68.9293 27.5973 70.5856 33.4985 70.933C34.8421 71.0084 137.641 71.0084 139.042 70.933C149.611 70.3365 159.143 65.2346 165.508 56.7679C171.896 48.2664 174.102 37.2343 171.496 26.7871C168.467 14.643 159.068 4.89069 147.034 1.40448C144.405 0.639955 141.851 0.205751 139.042 0.0492564C137.832 -0.0202016 34.5352 -0.0143422 33.3827 0.0551158ZM152.692 20.2372C154.539 20.5095 156.12 21.3666 157.325 22.7449C159.224 24.9166 160.69 28.7734 161.107 32.7056C161.286 34.3676 161.275 37.0258 161.078 38.7632C160.8 41.2591 160.203 43.4598 159.259 45.423C157.754 48.556 155.808 50.2527 153.045 50.8434C152.246 51.0173 150.735 51.0521 149.878 50.9304C147.179 50.5308 145.1 48.8976 143.565 45.9672C142.401 43.7552 141.695 41.2651 141.376 38.3C141.243 37.0085 141.243 33.916 141.376 32.6362C141.677 29.8391 142.297 27.5805 143.328 25.5303C144.92 22.3625 147.173 20.5848 150.074 20.2083C150.74 20.1271 152.038 20.1389 152.692 20.2372ZM20.9607 26.399V32.2481H24.6091H28.2575V26.399V20.55H30.9504H33.6433V35.5201V50.4903H30.9504H28.2575V44.3226V38.1551H24.6091H20.9607V44.3226V50.4903H18.2388H15.517V35.5201V20.55H18.2388H20.9607V26.399ZM55.0127 23.3876V26.2253H49.4532H43.8936V29.2946V32.364H48.266H52.6383V35.1727V37.9813H48.266H43.8936V41.2823V44.5833H49.4532H55.0127V47.5368V50.4903H46.6445H38.2763V35.5201V20.55H46.6445H55.0127V23.3876ZM69.1489 20.608C71.9229 20.8858 73.3938 21.7372 74.83 23.9088C75.6234 25.1019 76.0519 26.2311 76.301 27.789C76.4399 28.6518 76.4399 30.6497 76.3067 31.5532C76.0114 33.4932 75.4033 35.19 74.581 36.3598C73.7413 37.5585 72.2471 38.6589 71.0426 38.96C70.145 39.1917 69.7975 39.209 66.815 39.238L63.8731 39.2669V44.8786V50.4903H61.0644H58.2557V35.5201V20.55H63.4041C66.4907 20.55 68.7899 20.5732 69.1489 20.608ZM96.3615 23.1387L96.3557 25.7331L90.4545 35.2305L84.5534 44.7281L90.6283 44.7455L96.709 44.757V47.6236V50.4903H87.2694H77.8298V47.9365V45.3824L83.6963 35.8502C86.9161 30.6092 89.5685 26.3006 89.5743 26.2715C89.5859 26.2485 87.1188 26.2253 84.09 26.2253H78.5826V23.3876V20.55H87.4721H96.3615V23.1387ZM116.457 23.3876V26.2253H110.897H105.338V29.2946V32.364H109.71H114.082V35.1727V37.9813H109.71H105.338V41.2823V44.5833H110.897H116.457V47.5368V50.4903H108.089H99.7204V35.5201V20.55H108.089H116.457V23.3876ZM132.255 20.6832C134.838 21.1234 136.274 22.1889 137.45 24.5401C138.869 27.372 138.955 31.2462 137.67 33.9738C137.154 35.0684 136.147 36.2325 135.104 36.9332C134.803 37.1358 134.548 37.3096 134.537 37.3212C134.525 37.327 135.487 40.2747 136.662 43.8709C137.844 47.4673 138.811 50.4323 138.811 50.4496C138.811 50.4728 137.45 50.4903 135.782 50.4903H132.753L130.964 44.5948L129.168 38.7051L127.211 38.6879L125.259 38.6762V44.5833V50.4903H122.48H119.7V35.5201V20.5443L125.682 20.5673C131.062 20.5848 131.717 20.5963 132.255 20.6832Z" fill="white"/>
+            <path d="M150.625 25.9705C149.472 26.2196 148.58 27.0998 147.984 28.5708C147.538 29.6827 147.219 31.3388 147.086 33.2557C146.999 34.5645 147.051 37.9002 147.179 38.9947C147.555 42.2437 148.459 44.2242 149.883 44.9249C151.302 45.6257 152.918 45.2144 153.833 43.9232C154.939 42.3653 155.489 39.597 155.489 35.578C155.489 30.9857 154.736 27.8873 153.306 26.6365C152.785 26.1732 151.945 25.8721 151.233 25.8836C151.105 25.8836 150.833 25.9241 150.625 25.9705ZM152.154 32.8214C153.022 33.1282 153.752 33.8638 154.053 34.7384C154.157 35.0336 154.186 35.2421 154.186 35.7227C154.186 36.2034 154.157 36.4119 154.053 36.7072C153.752 37.576 153.034 38.3056 152.154 38.63C151.887 38.7285 151.679 38.7574 151.175 38.7574C150.225 38.7631 149.652 38.5373 148.991 37.8886C148.43 37.3327 148.146 36.7072 148.094 35.8966C148.001 34.4313 148.939 33.1457 150.393 32.7403C150.833 32.6187 151.696 32.6593 152.154 32.8214Z" fill="white"/>
+            <path d="M63.6415 29.9027V33.8811L65.8595 33.858C68.2744 33.8291 68.4017 33.8118 69.1199 33.4642C69.6122 33.2267 70.0118 32.8041 70.3245 32.1959C70.6719 31.5183 70.8226 30.9683 70.863 30.1865C70.9615 28.368 70.2781 26.903 69.0736 26.3412C68.3149 25.9879 68.2107 25.9763 65.8306 25.9473L63.6415 25.9242V29.9027Z" fill="white"/>
+            <path d="M125.259 29.7521V33.5801H127.188C130.414 33.5743 130.998 33.4701 131.717 32.7404C132.336 32.1149 132.707 31.2983 132.852 30.2444C133.02 28.9587 132.637 27.6383 131.85 26.7755C131.172 26.0342 130.969 25.9937 127.709 25.9531L125.259 25.9242V29.7521Z" fill="white"/>
+          </svg>
+      </div>
+
+      <!-- текст на баннере -->
+      <div class="home-wrapper-text">
+        Every year, hepatitis B<br>
+        silently kills over a<br>
+        million people.<br>
+        That’s one life lost...<br>
+        <span class="home-wrapper-text-yellow">every 30 seconds.</span> <!-- желтый текст на баннере -->
+      </div>              
+    </div> 
+  </div>
+
+  <!-- статистика -->
+  <div class="home-main-stats">
+    <div>254 MILLION PEOPLE WERE LIVING WITH CHRONIC HEPATITIS B IN 2022</div>
+    <div>1.2 MILLION NEW INFECTIONS EACH YEAR</div>
+    <div>1.1 MILLION DEATHS IN 2022, MOSTLY DUE TO CIRRHOSIS AND LIVER CANCER</div>
+  </div>
+
+  <!-- контейнер контента о баруче -->
+  <div class="home-about-baruch-section">
+
+    <!-- текст о докторе -->
+    <div class="home-about-baruch__text">
       <p>
-        Beyond the physical toll,
-        <br />people living with HBV <br />often face shame, <br />anxiety, and
-        fear. Stigma <br />drives them away from <br />their communities, breaks
-        <br />relationships, and keeps <br />them from seeking care.
+        In 1969, Dr. Baruch Blumberg developed the first vaccine against hepatitis B — a discovery that won him the Nobel Prize and has since saved millions of lives.
+      </p>
+      <p>
+        A vaccine exists and it works. But what about the 254 million people already living with chronic hepatitis B? Current treatments can control the virus. But they don’t cure it. The reason?
+      </p>
+      <p>
+        A molecular structure called cccDNA — a tiny circle of viral DNA that hides deep inside liver cells and keeps the infection alive, even decades later.
       </p>
     </div>
 
-    <div class="carousel-container">
-      <div class="carousel-slide">
-        <img
-          src="https://placehold.co/1195x672/EFEFEF/333333?text=Photo+1"
-          alt="Placeholder Image 1"
-        />
-      </div>
-      <div class="carousel-slide">
-        <img
-          src="https://placehold.co/1195x672/DDDDDD/333333?text=Photo+2"
-          alt="Placeholder Image 2"
-        />
-      </div>
-      <div class="carousel-slide">
-        <img
-          src="https://placehold.co/1195x672/CCCCCC/333333?text=Photo+3"
-          alt="Placeholder Image 3"
-        />
-      </div>
-      <button class="carousel-button prev">&#10094;</button>
-      <button class="carousel-button next">&#10095;</button>
+    <!-- фото доктора -->
+    <div class="home-about-baruch__photo">
+      <img src="https://static.igem.wiki/teams/5861/homepage/drbauch.webp" alt="Dr. Baruch Blumberg">
     </div>
   </div>
-</section>
 
-<section class="final-text-section">
-  <p class="breaking-cycle-text">
-    We are not only fighting a virus, we are fighting the barriers it builds
-    around people's lives.
-    <a href="#">Learn how we're breaking the cycle.</a>
-  </p>
-</section>
-
-<section class="scientists-section">
-  <img
-    src="https://static.igem.wiki/teams/5861/homepage/drbauch.webp"
-    alt="Scientists"
-    class="scientists-image"
-  />
-  <div class="nobel-prize-block">
-    <svg
-      class="nobel-prize-svg"
-      viewBox="0 0 938 417"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M13.0584 230.025C-20.7667 169.464 17.3062 93.8961 86.1051 85.0395L738.042 1.11514C789.597 -5.5216 832.62 40.0842 822.991 91.1651C817 122.948 831.643 155.065 859.565 171.386L888.872 188.516C972.556 237.43 942.021 365.168 845.263 370.949L78.7771 416.74C50.8588 418.408 38.1014 382.551 60.7994 366.211C72.3112 357.923 75.7793 342.321 68.8625 329.937L13.0584 230.025Z"
-        fill="#FFF800"
-      />
-    </svg>
-    <p class="nobel-prize-text">
-      In 1969, Dr. Baruch Blumberg developed the first vaccine against hepatitis
-      B — a discovery that won him the Nobel Prize and has since saved millions
-      of lives.
-    </p>
-  </div>
-</section>
-
-<section class="vaccine-info-section">
-  <p class="vaccine-info-header">
-    A vaccine exists and it works. But what about the 254 million people already
-    living with chronic hepatitis B?
-  </p>
-  <p class="vaccine-info-body">
-    Current treatments can control the virus, but they don’t cure it. The
-    reason? A molecular structure called cccDNA — a tiny circle of viral DNA
-    that hides deep inside liver cells. <br /><br />cccDNA is extraordinarily
-    stable: it can remain in the nucleus for years and is not eliminated by
-    immune responses or current therapies. This is what makes HBV a chronic and
-    difficult-to-cure infection.
-  </p>
-</section>
-
-<section class="placeholder-section">
-  <div class="grey-placeholder"></div>
-</section>
-
-<section class="engineered-system-section">
-  <h2 class="engineered-system-text">
-    We’ve engineered a system
-    <span class="large-text">to change that</span>
-  </h2>
-</section>
-
-<section class="car-section">
-  <img
-    src="https://static.igem.wiki/teams/5861/homepage/car.webp"
-    alt="Car"
-    class="car-image"
-  />
-</section>
-
-<section class="crispr-info-section">
-  <p class="crispr-header">
-    We have designed a dual-CRISPR system that targets cccDNA.
-  </p>
-  <p class="crispr-body">
-    By using two engineered guide RNAs that pair through a kissing loop, we
-    bring two dCas proteins to key regulatory regions. These RNA–RNA
-    interactions greatly increase the chance that both proteins bind exactly
-    where needed, enabling safer editing of infected cells.
-    <br /><br />
-    This way, we block viral gene expression and replication without cutting
-    DNA, so the host genome remains unharmed.
-    <br /><br />
-    <a href="#">Learn more about our solution</a>
-  </p>
-</section>
-
-<section class="video-banner-section">
-  <img
-    src="https://static.igem.wiki/teams/5861/homepage/videobanner.webp"
-    alt="Video Banner"
-    class="video-banner-image"
-  />
-</section>
-
-<section class="youtube-link-section">
-  <a href="https://youtu.be/4C_8o0mTBjY" class="youtube-link" target="_blank">
-    Watch our video on youtube!
-  </a>
-</section>
-
-<section class="mountain-section">
-  <div class="mountain-image-container">
-    <img
-      src="https://static.igem.wiki/teams/5861/homepage/mountain.webp"
-      alt="Mountain"
-      class="mountain-image"
-    />
-    <img
-      src="https://static.igem.wiki/teams/5861/homepage/roadsign.webp"
-      alt="Road Sign"
-      class="roadsign-image"
-    />
-  </div>
-
-  <div class="footer-left-content">
-    <div class="footer-contact-block">
-      <p class="contact-header">Contact us:</p>
-      <p class="contact-emails">
-        smbuigem2023@gmail.com<br />smbuigem2023@163.com
-      </p>
+  <!-- контейнер основного текста страницы -->
+  <div class="home-engineering-section">
+    
+    <!-- заголовок -->
+    <div class="home-engineering-title">
+      WE ARE ENGINEERING A SYSTEM TO CHANGE THAT
     </div>
-    <div class="footer-logo-left">
-      <svg
-        width="173"
-        height="71"
-        viewBox="0 0 173 71"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M33.3827 0.0551158C22.1595 0.721131 12.0365 6.57025 5.82841 15.975C1.2592 22.907 -0.709797 31.1826 0.228374 39.545C1.4561 50.4728 7.75688 60.2715 17.1965 65.9294C22.1884 68.9293 27.5973 70.5856 33.4985 70.933C34.8421 71.0084 137.641 71.0084 139.042 70.933C149.611 70.3365 159.143 65.2346 165.508 56.7679C171.896 48.2664 174.102 37.2343 171.496 26.7871C168.467 14.643 159.068 4.89069 147.034 1.40448C144.405 0.639955 141.851 0.205751 139.042 0.0492564C137.832 -0.0202016 34.5352 -0.0143422 33.3827 0.0551158ZM152.692 20.2372C154.539 20.5095 156.12 21.3666 157.325 22.7449C159.224 24.9166 160.69 28.7734 161.107 32.7056C161.286 34.3676 161.275 37.0258 161.078 38.7632C160.8 41.2591 160.203 43.4598 159.259 45.423C157.754 48.556 155.808 50.2527 153.045 50.8434C152.246 51.0173 150.735 51.0521 149.878 50.9304C147.179 50.5308 145.1 48.8976 143.565 45.9672C142.401 43.7552 141.695 41.2651 141.376 38.3C141.243 37.0085 141.243 33.916 141.376 32.6362C141.677 29.8391 142.297 27.5805 143.328 25.5303C144.92 22.3625 147.173 20.5848 150.074 20.2083C150.74 20.1271 152.038 20.1389 152.692 20.2372ZM20.9607 26.399V32.2481H24.6091H28.2575V26.399V20.55H30.9504H33.6433V35.5201V50.4903H30.9504H28.2575V44.3226V38.1551H24.6091H20.9607V44.3226V50.4903H18.2388H15.517V35.5201V20.55H18.2388H20.9607V26.399ZM55.0127 23.3876V26.2253H49.4532H43.8936V29.2946V32.364H48.266H52.6383V35.1727V37.9813H48.266H43.8936V41.2823V44.5833H49.4532H55.0127V47.5368V50.4903H46.6445H38.2763V35.5201V20.55H46.6445H55.0127V23.3876ZM69.1489 20.608C71.9229 20.8858 73.3938 21.7372 74.83 23.9088C75.6234 25.1019 76.0519 26.2311 76.301 27.789C76.4399 28.6518 76.4399 30.6497 76.3067 31.5532C76.0114 33.4932 75.4033 35.19 74.581 36.3598C73.7413 37.5585 72.2471 38.6589 71.0426 38.96C70.145 39.1917 69.7975 39.209 66.815 39.238L63.8731 39.2669V44.8786V50.4903H61.0644H58.2557V35.5201V20.55H63.4041C66.4907 20.55 68.7899 20.5732 69.1489 20.608ZM96.3615 23.1387L96.3557 25.7331L90.4545 35.2305L84.5534 44.7281L90.6283 44.7455L96.709 44.757V47.6236V50.4903H87.2694H77.8298V47.9365V45.3824L83.6963 35.8502C86.9161 30.6092 89.5685 26.3006 89.5743 26.2715C89.5859 26.2485 87.1188 26.2253 84.09 26.2253H78.5826V23.3876V20.55H87.4721H96.3615V23.1387ZM116.457 23.3876V26.2253H110.897H105.338V29.2946V32.364H109.71H114.082V35.1727V37.9813H109.71H105.338V41.2823V44.5833H110.897H116.457V47.5368V50.4903H108.089H99.7204V35.5201V20.55H108.089H116.457V23.3876ZM132.255 20.6832C134.838 21.1234 136.274 22.1889 137.45 24.5401C138.869 27.372 138.955 31.2462 137.67 33.9738C137.154 35.0684 136.147 36.2325 135.104 36.9332C134.803 37.1358 134.548 37.3096 134.537 37.3212C134.525 37.327 135.487 40.2747 136.662 43.8709C137.844 47.4673 138.811 50.4323 138.811 50.4496C138.811 50.4728 137.45 50.4903 135.782 50.4903H132.753L130.964 44.5948L129.168 38.7051L127.211 38.6879L125.259 38.6762V44.5833V50.4903H122.48H119.7V35.5201V20.5443L125.682 20.5673C131.062 20.5848 131.717 20.5963 132.255 20.6832Z"
-          fill="white"
-        />
-        <path
-          d="M150.625 25.9705C149.472 26.2196 148.58 27.0998 147.984 28.5708C147.538 29.6827 147.219 31.3388 147.086 33.2557C146.999 34.5645 147.051 37.9002 147.179 38.9947C147.555 42.2437 148.459 44.2242 149.883 44.9249C151.302 45.6257 152.918 45.2144 153.833 43.9232C154.939 42.3653 155.489 39.597 155.489 35.578C155.489 30.9857 154.736 27.8873 153.306 26.6365C152.785 26.1732 151.945 25.8721 151.233 25.8836C151.105 25.8836 150.833 25.9241 150.625 25.9705ZM152.154 32.8214C153.022 33.1282 153.752 33.8638 154.053 34.7384C154.157 35.0336 154.186 35.2421 154.186 35.7227C154.186 36.2034 154.157 36.4119 154.053 36.7072C153.752 37.576 153.034 38.3056 152.154 38.63C151.887 38.7285 151.679 38.7574 151.175 38.7574C150.225 38.7631 149.652 38.5373 148.991 37.8886C148.43 37.3327 148.146 36.7072 148.094 35.8966C148.001 34.4313 148.939 33.1457 150.393 32.7403C150.833 32.6187 151.696 32.6593 152.154 32.8214Z"
-          fill="white"
-        />
-        <path
-          d="M63.6415 29.9027V33.8811L65.8595 33.858C68.2744 33.8291 68.4017 33.8118 69.1199 33.4642C69.6122 33.2267 70.0118 32.8041 70.3245 32.1959C70.6719 31.5183 70.8226 30.9683 70.863 30.1865C70.9615 28.368 70.2781 26.903 69.0736 26.3412C68.3149 25.9879 68.2107 25.9763 65.8306 25.9473L63.6415 25.9242V29.9027Z"
-          fill="white"
-        />
-        <path
-          d="M125.259 29.7521V33.5801H127.188C130.414 33.5743 130.998 33.4701 131.717 32.7404C132.336 32.1149 132.707 31.2983 132.852 30.2444C133.02 28.9587 132.637 27.6383 131.85 26.7755C131.172 26.0342 130.969 25.9937 127.709 25.9531L125.259 25.9242V29.7521Z"
-          fill="white"
-        />
-      </svg>
+    
+    <!-- основной текст -->
+    <div class="home-engineering-desc">
+      We are building a dual-CRISPR system that targets cccDNA with unprecedented precision — without cutting the DNA. By using two engineered guide RNAs that lock together like molecular puzzle pieces, we bring two dCas proteins to key regulatory regions of the virus’s genetic reservoir — the cccDNA. 
+      <br><br>
+      This precise assembly enables us to epigenetically repress viral transcription at its root — blocking replication without damaging the host genome.
     </div>
-  </div>
-  <img
-    src="https://static.igem.wiki/teams/5861/footer/smbu-logo.webp"
-    alt="SMBU Logo"
-    class="footer-logo-right"
-  />
-</section>
 
-<script src="{{ url_for('static', filename='js/counter.js') }}"></script>
-<script src="{{ url_for('static', filename='js/carousel-script-home.js') }}"></script>
+    <!-- изображение схемы -->
+    <div class="home-final-scheme">
+      <img src="https://static.igem.wiki/teams/5861/homepage/final-scheme.webp" alt="Final Scheme">
+    </div>
 
+  </div>    
 {% endblock %}
